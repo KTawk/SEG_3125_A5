@@ -32,10 +32,20 @@ const DashboardFr = () => {
         fontWeight="bold"
         gutterBottom
         color={colors.grey[100]}
-        mb="100px"
       >
         Tableau de bord analytique
       </Typography>
+
+      {/* SYNTHETIC DATA DISCLAIMER */}
+            <Typography
+              variant="caption"
+              align="center"
+              display="block"
+              color={colors.grey[200]}
+              sx={{ fontSize: '1.25rem', mb: 10 }}
+            >
+              Les données utilisées pour créer ce site Web sont synthétiques et ne représentent pas des données réelles.
+            </Typography> 
 
       {/* LINE CHART */}
       <Box mb="100px" width={WRAPPER_WIDTH} mx="auto">

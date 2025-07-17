@@ -46,7 +46,6 @@ const Dashboard = () => {
         display="block"
         color={colors.grey[200]}
         sx={{ fontSize: '1.25rem', mb: 10 }}
-        mb="600px"
       >
         The data used to create this website is synthetic and does not represent real‑world data.
       </Typography>

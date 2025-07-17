@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# (optional) Metro bundler cache
+.expo/
+
+# (optional) OS or editor files
+.DS_Store
+.vscode/

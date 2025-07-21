@@ -5,6 +5,8 @@ import { useContext } from "react";
 import { ColorModeContext, tokens } from "../../theme";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+// 1️⃣ Import the portfolio icon
+import FolderOpenOutlinedIcon from "@mui/icons-material/FolderOpenOutlined";
 
 const Topbar = () => {
   const theme = useTheme();
@@ -34,7 +36,18 @@ const Topbar = () => {
       </Box>
 
       {/* ICONS */}
-      <Box display="flex" alignItems="center">
+      <Box display="flex" alignItems="center" gap={1}>
+        {/* 2️⃣ Portfolio button */}
+        <IconButton
+          component="a"
+          href="https://ktawk.github.io/myPortfolio/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="My Portfolio"
+        >
+          <FolderOpenOutlinedIcon />
+        </IconButton>
+
         {/* Dark / Light mode toggle */}
         <IconButton onClick={colorMode.toggleColorMode}>
           {theme.palette.mode === "dark" ? (
